@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Learning CSS Positioning</title>
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <header>
+      <h3>Learning JavaScript with Visuals</h3>
+      <h5>
+        This is the draft I used in learning JavaScript. I liked implementing as
+        I learned. So, I used this page to run and and view my code. I only
+        edited it today, 23/02/2022. <br />
+        If you're on this site, esp as a beginner, you'll definately find it
+        helpful as I have made it simplified step by step,
+      </h5>
+    </header>
+    <hr />
+
+    <!-- ==== MAIN BODY ==== -->
+    <main>
+      <section>
+        <h4>INTRODUCTION</h4>
+        <p>
+          As you may already know, this webpage is written with HTML, styled
+          with CSS, and the function is activated with some Javascript codes
+          <br />
+          <b>What do I mean?</b> <br />
+          Web pages aren't just about displaying images and notes and wonderful
+          designs for the viewer's eyes, it is also about interacting with the
+          user.. getting feedbacks from the user and giving responses to the
+          user. This user is now referrted to as the <b>"client".</b>
+          <br />
+          Moving forward, getting responses from a user can come from link
+          clicks, using a button, imputing delivery details, giving feedbacks on
+          a company's website, all meets just the eyes.
+          <br />
+          This website seeks to show you peeks of what you can do with
+          Javascript, it's importance and why it is relevant for a developer
+          especially a one from the Front End.
+        </p>
+
+        <!-- <aside>
+          <p>This work assumes you have knowledge of HTML and some CSS</p>
+        </aside> -->
+      </section>
+      <hr />
+
+      <!-- ======= EXPLAINING HOW JAVASCRIPT WORKD ==== -->
+      <section>
+        <p style="text-decoration: underline">
+          <b>Explaining How Javascript Works</b>
+        </p>
+        <p>
+          What I mean by functionality is simply the aability to do something,
+          or make something actually work. There are many cases this can be
+          implemented.. <br />
+          Take for instance, buttons.. when created with just HTML and CSS,
+          they're just dummies cos they actually don't do anything even after
+          being clicked (well, except for buttons that have an a tag with a link
+          inside)
+        </p>
+        <hr />
+
+        <div class="js-example">
+          <p>
+            <b>For example:</b> <br />
+            Click the buttons to get your answer
+          </p>
+
+          <p class="my-name">
+            What's my name? <button onclick="nameAnswer()">Answer</button>
+          </p>
+          <p class="my-country">
+            What country are you from?
+            <button onclick="country()">Answer</button>
+          </p>
+          <p class="my-course">
+            What is this about?
+            <button onclick="course()">Answer</button> <br />
+          </p>
+        </div>
+        <p>
+          Not just about clicking buttons, Javascript with the help of CSS can
+          make animations as well. Some badass coders may not even need CSS to
+          make these things.
+          <br />
+          Thanks to growth and inventions, frameworks like React.js and
+          TypeScript have conme to make life easier and les strefful for
+          developers. Don't fidget, you'll get there soon!
+        </p>
+        <hr />
+      </section>
+
+      <section>
+        <!-- <div id="info">
+          <p id="demo"></p>
+          <p class="demo2"></p>
+          <p class="address"></p>
+        </div> -->
+
+        <div id="color" class="color"></div>
+        <button onclick="previousTransition()">Left</button>
+        <button id="btn" onclick="nextTransiton()">Right</button>
+      </section>
+      <hr />
+
+      <section>
+        <h3>DATA TYPES</h3>
+        <p>
+          NUMBERS... EG: let age = 21;
+          STRINGS ... EG: let name = "Makis"; //NB: Strings are denoted with a double quotation ("") or a single quote ('')
+          BOOLEAN ... It takes two values, can be true or false statement, yes or no, positive or negative. 
+          UNDEFINED ... It is when a variable is created but nit assigned a value
+        </p>
+        
+        <p>
+          We have different ways of declaring variables, the var, let and const
+        </p>
+        <p>
+          The <b>var</b> is a depreciated way of declaring variables.
+          <b>let</b> and <b>const </b> were introduced in 2015 in the ES6
+          (EcmaScript6) also known as ES2015. <br />
+          <em>let </em>is used in block scoped functions. They are mutable, ie,
+          its value can be re-assigned. On the other hand, <em>const</em> are
+          function scoped and global scoped too. It's value are immutable, ie,
+          it can <b>never</b> be changed through out the page once declared
+          <a href="https://hashnode.com/preview/63eee34d7bedc90008e20fcd"
+            >here</a
+          >
+        </p>
+        <hr />
+
+        <!-- SECOND EXAMPLE  -->
+        <section>
+          <div class="js-example">
+            <figure>
+              <img
+                src="imgs/camel_case_example.png"
+                alt="a picture declaring a variable"
+              />
+              <figcaption>
+                <p style="color: gray">
+                  // Note: you can store numbers, figures, words, or even
+                  another variable names. A word or set of words are denoted
+                  with "" and are referred to as <b>strings</b>.
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+          <p>
+            Observe that the third variable was written <b>myName</b> rather
+            than <b>myname</b> or <b>my-name</b>. The system of calling and
+            naming vavriables is called the camelCase, where the first letter of
+            the second word is capitalized. In the code written for this page,
+            these variables are called and named. Like other languages, the
+            Javascript codes can be seen in the Developer Tools. This is called
+            the <b>console</b>. <br />
+            Use (Ctrl + Shift + I => Windows) on your webpage to see the result!
+            <br />
+            The console.log() is one of the most popularly used syntax, for
+            outputing results in the console // There are others you'll get to
+            know more about as we proceed. <br />
+          </p>
+        </section>
+
+        <!-- THIRD EXAMPLE  -->
+        <div class="js-example">
+          <div class="js-example">
+            <figure>
+              <img
+                src="imgs/Screenshot (87).png"
+                alt="logging ti the console"
+              />
+              <figcaption>
+                <p style="color: gray">Logging to the sonsole</p>
+              </figcaption>
+            </figure>
+            <p> COMMENTS:
+              // It is used to make notes you don't want the computer to render. This particular line is a single line comment!
+              <br>
+              /* This <br>
+              is a multi-line <br>
+              comment
+              */</p>
+        </div>
+      </section>
+
+
+      <!-- OPERATIONS IN JS -->
+      <section>
+        <div>
+          <header><h3>OPERATIONS IN JAVASCRIPT</h3></header>
+          <ul>
+            <li>Arithmetic or Mathematical Operations</li>
+            <p>
+              These performs different operations like the addition,
+              substraction, division, multiplication and even the equals sign
+              <br />
+              For eg:
+            </p>
+            <div class="js-example">
+              <figure>
+                <img src="imgs/Screenshot (89).png" alt="showing the different arithmetic operators">
+              </figure>
+            </div>
+
+            <!-- CONDITIONAL OPERATORS -->
+            <li>
+              Conditional OPERATORS
+              <p>
+                This perfoms operations based on condiotions, ie, depend son
+                some requirements for something to get ithe final solution
+              </p>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- JAVASCRIPT  -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
